@@ -39,8 +39,8 @@ export LC_ALL=en_US.UTF-8
 # Update Server
 #--------------------------------------------------
 echo -e "\n---- Update Server ----"
-sudo apt-get update
-sudo apt-get upgrade -y
+# sudo apt-get update
+# sudo apt-get upgrade -y
 
 sudo apt-get install git wget build-essential dnsutils lsb-release software-properties-common sudo -y
 
