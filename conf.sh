@@ -2,7 +2,7 @@
 ##fixed parameters
 #odoo
 
-OE_VERSION="16.0"
+OE_VERSION="17.0"
 OE_INSTALL_DIR="$OE_HOME/$OE_VERSION"
 OE_REPO="$OE_INSTALL_DIR/odoo"
 #Set to true if you want to install it, false if you don't need it or have it already installed.
@@ -24,7 +24,7 @@ OE_DB_HOST="localhost"
 OE_DB_PORT="5432"
 OE_DB_USER="odoo"
 OE_DB_PASSWORD="odoo"
-PG_VERSION=12
+PG_VERSION=14
 
 WEB_SERVER="apache2" # or "apache2"
 
@@ -55,7 +55,7 @@ else
     OE_TEXT="Community"
 fi
 
-if [ $OE_VERSION = "11.0" ] || [ $OE_VERSION = "12.0" ] || [ $OE_VERSION = "13.0" ] || [ $OE_VERSION = "14.0" ] || [ $OE_VERSION = "16.0" ]; then
+if [ $OE_VERSION = "16.0" ] || [ $OE_VERSION = "17.0" ]; then
     PYTHON_VERSION="3"
 else
     PYTHON_VERSION="2"
