@@ -34,3 +34,20 @@ sudo chmod +x run.sh
 ```text
 sudo ./run.sh
 ```
+To run on ubuntu 22 where python 3.12 is intalled
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.10
+
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.12 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 2
+
+Install latest postgress 
+
+update setuptools
+python3 -m pip install --upgrade pip setuptools wheel
+
+then install these for wheel build tools  -- make sure to use 3.10 for dev dependeicy
+sudo apt install libsasl2-dev python3.10-dev libldap2-dev libssl-dev
+
