@@ -66,4 +66,26 @@ sudo apt install libsasl2-dev python3.10-dev libldap2-dev libssl-dev
 python3 -m pip install --upgrade pip setuptools wheel
 ```
 
+3. **Other postgress commands:**
+```text
+#Switch to postgress user
+sudo -i -u postgres
+#login in postgress
+psql
+
+#list database
+/l
+
+
+#select the pid for partiular database
+SELECT pg_terminate_backend(pid)
+FROM pg_stat_activity
+WHERE datname = 'hm';
+
+# remove the database
+DROP DATABASE hm;
+
+createuser --interactive --pwprompt --superuser odoo
+exit
+```
 
