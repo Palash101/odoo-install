@@ -53,6 +53,9 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 
 3. **Install Latest postgress:**
 ```text
 sudo apt install postgresql postgresql-contrib
+sudo -i -u postgres
+createuser --interactive --pwprompt --superuser odoo
+exit
 ```
 4. **Install python dependencies: make sure to use 3.10 for dev dependency**
 ```text
