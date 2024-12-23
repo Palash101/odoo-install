@@ -89,5 +89,8 @@ createuser --interactive --pwprompt --superuser odoo
 exit
 ```
 
-**Switch Python version using sudo update-alternatives --config python3
+**Switch Python version using 
+```
+sudo update-alternatives --config python3
+```
 
